@@ -1,6 +1,6 @@
 context:
   name: xzarrguard
-  version: "0.1.1"
+  version: "0.1.2"
   python_min: "3.12"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/x/xzarrguard/xzarrguard-${{ version }}.tar.gz
-  sha256: bc971fe8d30aa8d7461efadfb355529a3dea6bc74c5dfeb11dc0859126065203
+  sha256: 68e9c07e9c78d077367daa96f121dee6ed26a06080b36e040740c2e5cd63d6f5
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - python >=${{ python_min }}
     - xarray >=2024.9.0
     - zarr >=3.0.0
+    - fsspec >=2024.9.0
 
 tests:
   - python:
