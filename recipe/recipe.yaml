@@ -28,6 +28,7 @@ requirements:
     - python >=${{ python_min }}
     - xarray >=2024.9.0
     - zarr >=3.0.0
+    - fsspec >=2024.9.0
 
 tests:
   - python:
